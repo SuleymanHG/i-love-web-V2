@@ -1,0 +1,24 @@
+{
+  "name": "i-love-web-v2",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/SuleymanHG/i-love-web-V2#readme",
+  "bugs": {
+    "url": "https://github.com/SuleymanHG/i-love-web-V2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SuleymanHG/i-love-web-V2.git"
+  },
+  "license": "ISC",
+  "author": "Süleyman Huzeyfe Gökgül",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "liquidjs": "^10.21.1"
+  }
+}
