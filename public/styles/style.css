@@ -1,0 +1,187 @@
+/* Poppins Thin */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins ExtraLight */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Light */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Regular */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Medium */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins SemiBold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Bold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins ExtraBold */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Poppins Black */
+@font-face {
+  font-family: 'Poppins';
+  src: url('./fonts/Poppins-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+    /* Achtergrond */
+    --main-background-color: #0C0C0C;
+
+    --container-background-color:
+        linear-gradient(30deg, rgba(255 255 255 / 0.12), rgba(255 255 255 / 0.04)),
+        linear-gradient(30deg, rgba(236 37 37 / 0.12), rgba(236 37 37 / 0.04)),
+        rgba(255 255 255 / 0.1);
+
+    --border-color:linear-gradient(45deg,rgba(255,255,255,.42) 0%,rgba(255,255,255,.34) 0%,rgba(255,255,255,0)   53%,rgba(255,255,255,.2)  100%) 1;
+
+    /* Tekst kleuren */
+    --main-tekst-color:#ffffff;
+
+    /* Knop kleuren */
+    --verzend-knop:#B8080A;
+    /* SVG Kleur */
+    --main-svg-color:#ffffff;
+
+    /* Font sizes */
+    --size-16: 1em;        /* 16px */
+    --size-20: 1.25em;     /* 20px */
+    --size-24: 1.5em;      /* 24px */
+    --size-32: 2em;        /* 32px */
+    --size-36: 2.25em;     /* 36px */
+    
+    /* Headings desktop */
+    --h1-desktop-size:5em;
+    --h2-dekstop-size: 4em;
+
+    /* Headings tablet */
+    --h1-tablet-size:4em;
+
+    /* Headings mobiel */
+    --h1-mobiel-size:2.25em;
+    --h2-mobiel-size: 2.25em;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-background-color);
+  color: var(--main-tekst-color);
+}
+
+
+h2{
+    font-size: var(--h2-mobiel-size);
+    font-weight: 600;
+
+    @media (min-width:768px){
+        font-size: var(--h2-dekstop-size);
+    }
+
+}
+
+svg{
+    fill:var(--main-svg-color) ;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: var(--main-tekst-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.socials-svg{
+    svg{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+
+/* Formulieren */
+fieldset{
+    outline:none;
+    border: none;
+}
+legend{
+    font-size: var(--size-24);
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"], textarea{
+    border:none;
+    background-color: rgb(255, 255, 255,0.2);
+
+}
+
+label{
+    color:white;
+}
+
+.verzend-knop{
+    background-color: var(--verzend-knop);
+    border: none;
+    padding: 16px 35.85px ;
+    border-radius: 15px;
+    color: var(--main-tekst-kleur);
+    font-weight: 600;
+}
